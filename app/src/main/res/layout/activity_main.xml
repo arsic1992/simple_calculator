@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        >
+    
+    <TextView
+        android:id="@+id/preview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text=""
+        android:layout_margin="20dp"
+        android:textSize="25dp"
+        />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/orange"
+        android:layout_margin="20dp"
+        android:textSize="25dp"
+        />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        style="@style/btnRow">
+
+        <Button
+            android:id="@+id/btnClear"
+            style="@style/btnNumber"
+            android:text="AC">
+        </Button>
+
+        <Button
+            style="@style/btnNumber">
+        </Button>
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:text="⌫"
+            style="@style/btnNumber">
+        </Button>
+
+        <Button
+            android:id="@+id/btnDivide"
+            style="@style/btnOperations"
+            android:text="/">
+        </Button>
+
+    </LinearLayout>
+    <LinearLayout
+        style="@style/btnRow">
+
+        <Button
+            android:id="@+id/btnSeven"
+            style="@style/btnNumber"
+            android:text="7">
+        </Button>
+
+        <Button
+            android:id="@+id/btnEight"
+            style="@style/btnNumber"
+            android:text="8">
+        </Button>
+
+        <Button
+            android:id="@+id/btnNine"
+            style="@style/btnNumber"
+            android:text="9">
+        </Button>
+
+        <Button
+            android:id="@+id/btnMultiply"
+            style="@style/btnOperations"
+            android:text="x">
+        </Button>
+
+    </LinearLayout>
+    <LinearLayout
+        style="@style/btnRow">
+
+        <Button
+            android:id="@+id/btnFour"
+            style="@style/btnNumber"
+            android:text="4">
+        </Button>
+
+        <Button
+            android:id="@+id/btnFive"
+            style="@style/btnNumber"
+            android:text="5">
+        </Button>
+
+        <Button
+            android:id="@+id/btnSix"
+            style="@style/btnNumber"
+            android:text="6">
+        </Button>
+
+        <Button
+            android:id="@+id/btnMinus"
+            style="@style/btnOperations"
+            android:text="-">
+        </Button>
+
+    </LinearLayout>
+    <LinearLayout
+        style="@style/btnRow">
+
+        <Button
+            android:id="@+id/btnOne"
+            style="@style/btnNumber"
+            android:text="1">
+        </Button>
+
+        <Button
+            android:id="@+id/btnTwo"
+            style="@style/btnNumber"
+            android:text="2">
+        </Button>
+
+        <Button
+            android:id="@+id/btnThree"
+            style="@style/btnNumber"
+            android:text="3">
+        </Button>
+
+        <Button
+            android:id="@+id/btnPlus"
+            style="@style/btnOperations"
+            android:text="+">
+        </Button>
+
+    </LinearLayout>
+    <LinearLayout
+        style="@style/btnRow">
+
+
+
+        <Button
+            android:id="@+id/btnZero"
+            style="@style/btnNumber"
+            android:text="0">
+        </Button>
+
+
+        <Button
+            android:id="@+id/btnEqual"
+            style="@style/btnNumber"
+            android:layout_weight="2"
+            android:background="@color/orange"
+            android:text="=">
+        </Button>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
