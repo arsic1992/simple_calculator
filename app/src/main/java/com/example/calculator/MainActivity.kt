@@ -70,7 +70,12 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             }
 
             R.id.btnZero -> {
-                preview.text = previewValue.plus("0")
+                if(previewValue.last().toString() == "/") {
+                    Toast.makeText(applicationContext, "Division by zero is not possible", Toast.LENGTH_SHORT)
+                        .show()
+                } else {
+                    preview.text = previewValue.plus("0")
+                }
             }
 
             R.id.btnOne -> {
